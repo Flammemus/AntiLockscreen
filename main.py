@@ -38,26 +38,13 @@ while mainloop:
     clearConsole()
     
     tprint("Anti LS")
-    print("Hold the 'Backspace' at any time to cancel")
     print("The program will continue to run in the background if minimized")
     print(f"Cancels lock screen every {value} seconds with '{keyToPress}'\n")
 
     stat = 0
     active = True
-    interval = 0.1
-    total_time = 0
-
     while active:
-        if keyboard.is_pressed("backspace"):
-            active = False
-            print("\nBackspace pressed, exiting the loop")
-            break
-        
-        time.sleep(interval)
-        total_time += interval
 
-        if total_time >= value:
-            keyboard.send(keyToPress)
-            stat += 1
-            print(f"\rStopped the inevitable lockscreen from taking over {stat} times", end="", flush=True)
-            total_time = 0
+        time.sleep(value)
+        stat += 1
+        print(f"\rStopped the inevitable lockscreen from taking over {stat} times", end="", flush=True)
