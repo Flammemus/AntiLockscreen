@@ -53,13 +53,11 @@ while mainloop:
             print("\nBackspace pressed, exiting the loop")
             break
         
-        # Instead of sleeping for the whole 'value' time, we sleep in small intervals
         time.sleep(interval)
         total_time += interval
 
-        # Once the accumulated time reaches the user-defined value, send the key
         if total_time >= value:
             keyboard.send(keyToPress)
             stat += 1
             print(f"\rStopped the inevitable lockscreen from taking over {stat} times", end="", flush=True)
-            total_time = 0  # Reset the timer
+            total_time = 0
