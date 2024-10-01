@@ -46,5 +46,6 @@ while mainloop:
     while active:
 
         time.sleep(value)
+        keyboard.send(keyToPress)
         stat += 1
         print(f"\rStopped the inevitable lockscreen from taking over {stat} times", end="", flush=True)
