@@ -5,10 +5,10 @@ My main motivation is that my work decided that all PCs auto locks after 2 minut
 
 ![Intro Screen](./readmeSC/main.png)
 
-## How to run ##
-
-Find and run the "AntiLS.exe" file located in the "dist" folder. If theres a windows security popup, click on "Show more", then "Run anyway".
-
 ## How to download ##
 
 Click the green "<>Code" button located above the project files, then at the bottom of the dropdown, click Download ZIP.
+
+## How to run ##
+
+Find and run the "AntiLS.exe" file located in the "dist" folder. If theres a windows security popup, click on "Show more", then "Run anyway".
